@@ -1,0 +1,2067 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="PUBG MOBILE — Personal PlayerUnknown's Battlegrounds inspired web project."
+    >
+
+    <title>PUBG MOBILE | PlayerUnknown's Battlegrounds</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     BACKGROUND MUSIC
+====================================================== -->
+
+<audio id="themeMusic" loop>
+    <source src="audio/theme.mp3" type="audio/mpeg">
+</audio>
+
+
+<!-- =====================================================
+     NAVBAR
+====================================================== -->
+
+<header class="navbar">
+
+    <!-- LOGO -->
+
+    <a href="#home" class="logo">
+        PUBG <span>MOBILE</span>
+    </a>
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="nav-links" id="navLinks">
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#music">Music</a>
+
+        <a href="#maps">Maps</a>
+
+        <a href="#weapons">Weapons</a>
+
+        <a href="#gallery">Gallery</a>
+
+        <a href="#royal-passes">Royal Passes</a>
+
+        <a href="#events">Events</a>
+
+       
+    </nav>
+
+
+    <!-- NAV RIGHT -->
+
+    <div class="nav-right">
+
+        <button
+            id="musicButton"
+            class="music-button"
+            type="button"
+        >
+            🎵 Music
+        </button>
+
+        <button
+            id="menuButton"
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+====================================================== -->
+
+<main>
+
+    <section id="home" class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="hero-label">
+                PERSONAL BATTLE ROYALE PORTFOLIO
+            </div>
+
+
+            <h1>
+                PUBG<br>
+                <span>MOBILE</span>
+            </h1>
+
+
+            <p>
+                PLAYERUNKNOWN'S BATTLEGROUNDS
+            </p>
+
+
+            <p>
+                A personal fan-made web experience inspired by
+                the world, maps, weapons, atmosphere, and visual
+                style of PUBG MOBILE.
+            </p>
+
+
+            <!-- HERO MUSIC -->
+
+            <div class="music-box">
+
+                <div class="music-icon">
+
+                    <img
+                        src="pubg-music-cover.jpg"
+                        alt="PUBG MOBILE"
+                    >
+
+                </div>
+
+
+                <div class="music-details">
+
+                    <h3>
+                        PUBG MOBILE THEME SONG
+                    </h3>
+
+
+                    <!-- ACTUAL MUSIC FILE -->
+        <audio id="pubgThemeMusic" preload="metadata">
+            <source src="pubg-theme-song.mp3" type="audio/mpeg">
+            Your browser does not support audio playback.
+        </audio>
+        
+                    <div
+                        class="progress-container"
+                        id="progressContainer"
+                    >
+
+                        <div
+                            class="progress"
+                            id="musicProgress"
+                        ></div>
+
+                    </div>
+
+
+                    <div class="music-time">
+
+                        <span id="currentTime">
+                            0:00
+                        </span>
+
+                        <span id="duration">
+                            0:00
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="playButton"
+                    class="play-button"
+                    type="button"
+                    aria-label="Play music"
+                >
+                    ▶
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <section id="about" class="section about-section">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">
+                01 / ABOUT
+            </span>
+
+            <h2>
+                PLAYERUNKNOWN'S<br>
+                BATTLEGROUNDS
+            </h2>
+
+            <p>
+                A personal website project created around the
+                PUBG MOBILE experience and its iconic battle
+                royale atmosphere.
+            </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <div class="about-image">
+
+                <img
+                    src="pubg-hero.jpg"
+                    alt="PUBG MOBILE inspired battlefield"
+                >
+
+            </div>
+
+
+            <div class="about-content">
+
+                <h3>
+                    PUBG MOBILE
+                </h3>
+
+                <p>
+                   PUBG MOBILE is a globally popular Battle 
+                   Royale mobile game co-developed by LIGHTSPEED
+                   STUDIOS of Tencent Games and KRAFTON, Inc., and 
+                   officially licensed from PUBG: BATTLEGROUNDS, 
+                   originally created by Brendan Greene.
+                </p>
+
+                <p>
+                  First released globally in March 2018, PUBG MOBILE
+                  brought the intense PlayerUnknown’s Battlegrounds 
+                  experience to mobile devices with detailed environments,
+                  tactical combat, vehicles, weapons, and multiple maps
+                  powered by Unreal Engine 4. In the classic Battle Royale,
+                  up to 100 players drop onto the battlefield, gather weapons
+                  and supplies, outplay opponents, and survive the shrinking
+                  play zone. **Only one player or team can claim victory — 
+                  become the last one standing and earn the iconic 
+                  #1 Winner Winner Chicken Dinner. From Erangel and
+                  Miramar to Sanhok and Vikendi, PUBG MOBILE continues
+                  to connect players through competitive gameplay, events,
+                  collaborations, Royale Passes, and unforgettable battles.
+
+                </p>
+
+                 
+                <p>
+                  At its heart, PUBG MOBILE is about strategy, survival, teamwork,
+                  and the pursuit of one final victory.
+                </p>
+
+
+                <div class="about-stats">
+
+                    <div class="about-stat">
+
+                        <strong>01</strong>
+
+                        <span>
+                            Personal Project
+                        </span>
+
+                    </div>
+
+
+                    <div class="about-stat">
+
+                        <strong>BR</strong>
+
+                        <span>
+                            Battle Royale
+                        </span>
+
+                    </div>
+
+
+                    <div class="about-stat">
+
+                        <strong>∞</strong>
+
+                        <span>
+                            Battle Experience
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+<section id="music" class="section music-section">
+
+    <div class="section-heading">
+        <span class="eyebrow">02 / SOUND</span>
+        <h2>BATTLEFIELD<br>MUSIC</h2>
+        <p>
+            Listen to the theme music while exploring
+            this personal PUBG MOBILE project.
+        </p>
+    </div>
+
+
+
+
+
+<!-- MUSIC BAR 1: ON MY WAY -->
+<div class="pubg-music-box">
+
+    <!-- LEFT: VIDEO -->
+    <div class="pubg-video-box">
+        <video id="battleVideo1" playsinline preload="metadata">
+            <source src="video-on-my-way.mp4" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
+    </div>
+
+    <!-- RIGHT: MUSIC DETAILS -->
+    <div class="pubg-music-info">
+
+        <h3>ON MY WAY</h3>
+
+        <p>PUBG MOBILE • Battlefield Music</p>
+
+     <!-- SEPARATE MUSIC FILE -->
+        <audio id="battleAudio1" preload="metadata">
+            <source src="on-my-way.mp3" type="audio/mpeg">
+        
+        </audio>
+        <!-- PROGRESS BAR -->
+        <div class="pubg-track" id="battleTrack1">
+            <div class="pubg-track-progress" id="battleProgress1"></div>
+        </div>
+
+        <!-- PLAYBACK TIME -->
+        <div class="pubg-time">
+            <span id="battleCurrent1">0:00</span>
+            <span id="battleDuration1">0:00</span>
+        </div>
+
+    </div>
+
+    <!-- PLAY / PAUSE BUTTON -->
+    <button
+        id="battleButton1"
+        class="pubg-control-button"
+        type="button"
+        aria-label="Play On My Way"
+    >▶</button>
+
+</div>
+
+
+<!-- MUSIC BAR 2: LIVE FAST -->
+<div class="pubg-music-box">
+
+    <!-- LEFT: VIDEO -->
+    <div class="pubg-video-box">
+        <video id="battleVideo2" playsinline preload="metadata">
+            <source src="video-live-fast.mp4" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
+    </div>
+
+    <!-- RIGHT: MUSIC DETAILS -->
+    <div class="pubg-music-info">
+
+        <h3>LIVE FAST</h3>
+
+        <p>PUBG MOBILE • Battlefield Music</p>
+
+
+     <!-- SEPARATE MUSIC FILE -->
+        <audio id="battleAudio2" preload="metadata">
+            <source src="live-fast.mp3" type="audio/mpeg">
+            
+        </audio>
+
+        <!-- PROGRESS BAR -->
+        <div class="pubg-track" id="battleTrack2">
+            <div class="pubg-track-progress" id="battleProgress2"></div>
+        </div>
+
+        <!-- PLAYBACK TIME -->
+        <div class="pubg-time">
+            <span id="battleCurrent2">0:00</span>
+            <span id="battleDuration2">0:00</span>
+        </div>
+
+    </div>
+
+    <!-- PLAY / PAUSE BUTTON -->
+    <button
+        id="battleButton2"
+        class="pubg-control-button"
+        type="button"
+        aria-label="Play Live Fast"
+    >▶</button>
+
+</div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- =====================================================
+         MAPS
+    ====================================================== -->
+
+    <section id="maps" class="section maps-section">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">
+                03 / BATTLEGROUNDS
+            </span>
+
+            <h2>
+                MAPS
+            </h2>
+
+            <p>
+                Explore some of the iconic battleground
+                environments associated with PUBG MOBILE.
+            </p>
+
+        </div>
+
+
+        <div class="maps-grid">
+
+
+            <!-- ERANGEL -->
+
+            <article class="map-card">
+
+                <img
+                    src="pubg-erangel.jpg"
+                    alt="Erangel map"
+                >
+
+                <div class="card-overlay">
+
+                    <span>
+                        MAP 01
+                    </span>
+
+                    <h3>
+                        ERANGEL
+                    </h3>
+
+                    <p>
+                        Classic battlefield environment
+                        with cities, forests and open terrain.
+                    </p>
+
+                </div>
+
+                 <div class="map-photo-box">
+        <img src="pubg-erangle-2.jpg" alt="Erangle battlefield">
+    </div>
+
+
+            </article>
+
+
+
+            <!-- MIRAMAR -->
+
+            <article class="map-card">
+
+                <img
+                    src="pubg-miramar.jpg"
+                    alt="Miramar map"
+                >
+
+                <div class="card-overlay">
+
+                    <span>
+                        MAP 02
+                    </span>
+
+                    <h3>
+                        MIRAMAR
+                    </h3>
+
+                    <p>
+                        A large desert environment with
+                        rugged mountains and urban areas.
+                    </p>
+
+                </div>
+
+                 <div class="map-photo-box">
+        <img src="pubg-miramar-2.jpg" alt="Miramar battlefield">
+    </div>
+
+
+            </article>
+
+
+
+            <!-- SANHOK -->
+
+            <article class="map-card">
+
+                <img
+                    src="pubg-sanhok.jpg"
+                    alt="Sanhok map"
+                >
+
+                <div class="card-overlay">
+
+                    <span>
+                        MAP 03
+                    </span>
+
+                    <h3>
+                        SANHOK
+                    </h3>
+
+                    <p>
+                        Dense tropical terrain designed
+                        for fast and close encounters.
+                    </p>
+
+                </div>
+
+                 <div class="map-photo-box">
+        <img src="pubg-shanok-2.jpg" alt="Shanok battlefield">
+    </div>
+
+
+            </article>
+
+
+
+            <!-- VIKENDI -->
+
+            <article class="map-card">
+
+                <img
+                    src="pubg-vikendi.jpg"
+                    alt="Vikendi map"
+                >
+
+                <div class="card-overlay">
+
+                    <span>
+                        MAP 04
+                    </span>
+
+                    <h3>
+                        VIKENDI
+                    </h3>
+
+                    <p>
+                        Snowy landscapes designed for intense 
+                        battles and winter survival.
+                </p>
+
+                </div>
+                  
+                 <div class="map-photo-box">
+        <img src="pubg-vikendi-2.jpg" alt="Vikendi battlefield">
+    </div>
+
+
+            </article>
+
+            
+
+
+            <!-- LIVIK -->
+
+            <article class="map-card">
+
+                <img
+                    src="pubg-livik.jpg"
+                    alt="Livik map"
+                >
+
+                <div class="card-overlay">
+
+                    <span>
+                        MAP 05
+                    </span>
+
+                    <h3>
+                        LIVIK
+                    </h3>
+
+                    <p>
+                        A compact battleground with
+                        varied landscapes and fast action.
+                    </p>
+
+                </div>
+
+         <div class="map-photo-box">
+        <img src="pubg-livik-2.jpg" alt="Livik battlefield">
+    </div>
+
+      </div>
+
+ </article>
+
+      
+
+<!-- TDM MAPS -->
+
+<div class="tdm-heading">
+    <span class="eyebrow"></span>
+    <h2>TDM</h2>
+    <p>
+        Explore intense Team Deathmatch arenas built for
+        fast-paced combat and exciting gameplay.
+    </p>
+</div>
+
+<div class="tdm-grid">
+
+    <!-- BOX 1: 16:9 -->
+    <article class="tdm-card tdm-card-wide">
+
+        <img src="pubg-tdm1.jpg" alt="PUBG TDM Warehouse">
+
+        <div class="tdm-overlay">
+            <span>Map 07</span>
+            <h3>WAREHOUSE</h3>
+            <p>Fast-paced battles and close-range combat.</p>
+        </div>
+
+    </article>
+
+    <!-- BOX 2: 1:1 -->
+    <article class="tdm-card tdm-card-square">
+
+        <img src="pubg-tdm2.jpg" alt="PUBG TDM Arena">
+
+        <div class="tdm-overlay">
+           
+        </div>
+
+    </article>
+
+
+
+
+
+
+
+
+
+           
+
+    </section>
+
+
+
+    <!-- =====================================================
+         WEAPONS
+    ====================================================== -->
+
+    <section id="weapons" class="section weapons-section">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">
+                04 / ARSENAL
+            </span>
+
+            <h2>
+                WEAPONS
+            </h2>
+
+            <p>
+                A visual collection inspired by different
+                weapon categories found across the battlefield.
+            </p>
+
+        </div>
+
+
+        <div class="weapons-grid">
+
+
+            <!-- WEAPON 01 -->
+
+            <article class="weapon-card">
+
+                <img
+                    src="pubg-weapon1.jpg"
+                    alt="Assault rifle"
+                >
+
+                <div class="weapon-number">
+                    
+                </div>
+
+                <div class="weapon-info">
+
+                    <span>
+                        Assault Rifle
+                    </span>
+
+                    <h3>
+                        AR
+                    </h3>
+
+                    <p>
+                        Balanced weapons designed for
+                        versatile combat situations.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- WEAPON 02 -->
+
+            <article class="weapon-card">
+
+                <img
+                    src="pubg-weapon2.jpg"
+                    alt="Sniper rifle"
+                >
+
+                <div class="weapon-number">
+                    
+                </div>
+
+                <div class="weapon-info">
+
+                    <span>
+                        Sniper Rifle
+                    </span>
+
+                    <h3>
+                        SNIPER
+                    </h3>
+
+                    <p>
+                        Long-range weapons built around
+                        precision and patience.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- WEAPON 03 -->
+
+            <article class="weapon-card">
+
+                <img
+                    src="pubg-weapon3.jpg"
+                    alt="Submachine gun"
+                >
+
+                <div class="weapon-number">
+                    
+                </div>
+
+                <div class="weapon-info">
+
+                    <span>
+                        Submachine Gun
+                    </span>
+
+                    <h3>
+                        SMG
+                    </h3>
+
+                    <p>
+                        Compact weapons suited for
+                        fast close-range engagements.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- WEAPON 04 -->
+
+            <article class="weapon-card">
+
+                <img
+                    src="pubg-weapon4.jpg"
+                    alt="Shotgun"
+                >
+
+                <div class="weapon-number">
+                    
+                </div>
+
+                <div class="weapon-info">
+
+                    <span>
+                        Shotgun
+                    </span>
+
+                    <h3>
+                        SHOTGUN
+                    </h3>
+
+                    <p>
+                        Powerful close-range weapons
+                        built for high-impact encounters.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+         <article class="weapon-card">
+
+                <img
+                    src="pubg-weapon5.jpg"
+                    alt="Light Machine Gun"
+                >
+
+                <div class="weapon-number">
+                    
+                </div>
+
+                <div class="weapon-info">
+
+                    <span>
+                        Light Machine Gun
+                    </span>
+
+                    <h3>
+                        LMG
+                    </h3>
+
+                    <p>
+                        A powerful light machine gun built for
+                        sustained automatic fire.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         GALLERY
+    ====================================================== -->
+
+    <section id="gallery" class="section gallery-section">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">
+                05 / VISUALS
+            </span>
+
+            <h2>
+                GALLERY
+            </h2>
+
+            <p>
+                A cinematic collection of battlefield
+                moments and PUBG MOBILE inspired visuals.
+            </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+
+            <div class="gallery-item large">
+
+                <img
+                    src="pubg-gallery1.jpg"
+                    alt="PUBG MOBILE gallery image 2"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery2.jpg"
+                    alt="PUBG MOBILE gallery image 2"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery3.jpg"
+                    alt="PUBG MOBILE gallery image 3"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery4.jpg"
+                    alt="PUBG MOBILE gallery image 4"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery5.jpg"
+                    alt="PUBG MOBILE gallery image 5"
+                >
+
+            </div>
+
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery6.jpg"
+                    alt="PUBG MOBILE gallery image 6"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery7.jpg"
+                    alt="PUBG MOBILE gallery image 7"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery8.jpg"
+                    alt="PUBG MOBILE gallery image 8"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery9.jpg"
+                    alt="PUBG MOBILE gallery image 9"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery10.jpg"
+                    alt="PUBG MOBILE gallery image 10"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery11.jpg"
+                    alt="PUBG MOBILE gallery image 11"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery12.jpg"
+                    alt="PUBG MOBILE gallery image 12"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery13.jpg"
+                    alt="PUBG MOBILE gallery image 13"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery14.jpg"
+                    alt="PUBG MOBILE gallery image 14"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery15.jpg"
+                    alt="PUBG MOBILE gallery image 15"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery16.jpg"
+                    alt="PUBG MOBILE gallery image 16"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery17.jpg"
+                    alt="PUBG MOBILE gallery image 17"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery18.jpg"
+                    alt="PUBG MOBILE gallery image 18"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery19.jpg"
+                    alt="PUBG MOBILE gallery image 19"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery20.jpg"
+                    alt="PUBG MOBILE gallery image 20"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery21.jpg"
+                    alt="PUBG MOBILE gallery image 21"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery22.jpg"
+                    alt="PUBG MOBILE gallery image 22"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery23.jpg"
+                    alt="PUBG MOBILE gallery image 23"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery24.jpg"
+                    alt="PUBG MOBILE gallery image 24"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery25.jpg"
+                    alt="PUBG MOBILE gallery image 25"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery26.jpg"
+                    alt="PUBG MOBILE gallery image 26"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery27.jpg"
+                    alt="PUBG MOBILE gallery image 27"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery28.jpg"
+                    alt="PUBG MOBILE gallery image 28"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery29.jpg"
+                    alt="PUBG MOBILE gallery image 29"
+                >
+
+            </div>
+
+             <div class="gallery-item">
+
+                <img
+                    src="pubg-gallery30.jpg"
+                    alt="PUBG MOBILE gallery image 30"
+                >
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ROYAL PASSES
+    ====================================================== -->
+
+    <section
+        id="royal-passes"
+        class="section royal-pass-section"
+    >
+
+        <div class="section-heading">
+
+            <span class="eyebrow">
+                06 / BATTLE HISTORY
+            </span>
+
+            <h2>
+               ALL TIME BEST ROYAL
+                PASSES
+            </h2>
+
+            <p>
+                A visual collection of PUBG MOBILE
+                Royal Pass artwork and designs.
+            </p>
+ 
+        </div>
+
+
+        <div class="royal-pass-grid">
+
+
+            <!-- ROYAL PASS 02 -->
+
+            <article class="royal-pass-card">
+
+                <div class="royal-pass-image">
+
+                    <img
+                        src="pubg-royalpass2.jpg"
+                       
+                    >
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ROYAL PASS 03 -->
+
+            <article class="royal-pass-card">
+
+                <div class="royal-pass-image">
+
+                    <img
+                        src="pubg-royalpass3.jpg"
+                       
+                    >
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ROYAL PASS 04 -->
+
+            <article class="royal-pass-card">
+
+                <div class="royal-pass-image">
+
+                    <img
+                        src="pubg-royalpass4.jpg"
+                       
+                    >
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ROYAL PASS 05 -->
+
+            <article class="royal-pass-card">
+
+                <div class="royal-pass-image">
+
+                    <img
+                        src="pubg-royalpass5.jpg"
+                        
+                    >
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ROYAL PASS 06 -->
+
+            <article class="royal-pass-card">
+
+                <div class="royal-pass-image">
+
+                    <img
+                        src="pubg-royalpass6.jpg"
+                       
+                    >
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ROYAL PASS 07 -->
+
+            <article class="royal-pass-card">
+
+                <div class="royal-pass-image">
+
+                    <img
+                        src="pubg-royalpass7.jpg"
+                       
+                    >
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ROYAL PASS 08 -->
+
+            <article class="royal-pass-card">
+
+                <div class="royal-pass-image">
+
+                    <img
+                        src="pubg-royalpass8.jpg"
+                       
+                    >
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ROYAL PASS 09 -->
+
+            <article class="royal-pass-card">
+
+                <div class="royal-pass-image">
+
+                    <img
+                        src="pubg-royalpass9.jpg"
+                       
+                    >
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ROYAL PASS 10 -->
+
+            <article class="royal-pass-card">
+
+                <div class="royal-pass-image">
+
+                    <img
+                        src="pubg-royalpass10.jpg"
+                        
+                    >
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ROYAL PASS 11 -->
+
+            <article class="royal-pass-card">
+
+                <div class="royal-pass-image">
+
+                    <img
+                        src="pubg-royalpass11.jpg"
+                       
+                    >
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ROYAL PASS 12 -->
+
+            <article class="royal-pass-card">
+
+                <div class="royal-pass-image">
+
+                    <img
+                        src="pubg-royalpass12.jpg"
+                       
+                    >
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ROYAL PASS 14 -->
+
+            <article class="royal-pass-card">
+
+                <div class="royal-pass-image">
+
+                    <img
+                        src="pubg-royalpass14.jpg"
+                       
+                    >
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         EVENTS
+    ====================================================== -->
+
+    <section
+        id="events"
+        class="section events-section"
+    >
+
+        <div class="section-heading">
+
+            <span class="eyebrow">
+                07 / BATTLE EVENTS
+            </span>
+
+            <h2>
+                GREATEST EVENTS OF ALL TIME
+            </h2>
+
+            <p>
+                A collection of PUBG MOBILE inspired
+                events, updates and special moments.
+            </p>
+
+        </div>
+
+
+        <div class="events-grid">
+
+
+            <!-- EVENT 01 -->
+
+            <article class="event-card">
+
+                <div class="event-image">
+
+                    <img
+                        src="pubg-event1.jpg"
+                        alt="PUBG MOBILE Event 01"
+                    >
+
+                </div>
+
+                <div class="event-info">
+
+                    <span>
+                        0.1.0
+                    </span>
+
+                    <h3>
+                       THE BEGINING ERA
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- EVENT 02 -->
+
+            <article class="event-card">
+
+                <div class="event-image">
+
+                    <img
+                        src="pubg-event2.jpg"
+                        alt="PUBG MOBILE Event 02"
+                    >
+
+                </div>
+
+                <div class="event-info">
+
+                    <span>
+                        0,7.0
+                    </span>
+
+                    <h3>
+                        WAR MODE
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- EVENT 03 -->
+
+            <article class="event-card">
+
+                <div class="event-image">
+
+                    <img
+                        src="pubg-event3.jpg"
+                        alt="PUBG MOBILE Event 03"
+                    >
+
+                </div>
+
+                <div class="event-info">
+
+                    <span>
+                        0.9.0
+                    </span>
+
+                    <h3>
+                        HALLOWEEN EVENT
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- EVENT 04 -->
+
+            <article class="event-card">
+
+                <div class="event-image">
+
+                    <img
+                        src="pubg-event4.jpg"
+                        alt="PUBG MOBILE Event 04"
+                    >
+
+                </div>
+
+                <div class="event-info">
+
+                    <span>
+                        0.11.0
+                    </span>
+
+                    <h3>
+                        SURVIVE TILL DAWN
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- EVENT 05 -->
+
+            <article class="event-card">
+
+                <div class="event-image">
+
+                    <img
+                        src="pubg-event5.jpg"
+                        alt="PUBG MOBILE Event 05"
+                    >
+
+                </div>
+
+                <div class="event-info">
+
+                    <span>
+                        0.15.0
+                    </span>
+
+                    <h3>
+                        PAYLOAD MODE
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- EVENT 06 -->
+
+            <article class="event-card">
+
+                <div class="event-image">
+
+                    <img
+                        src="pubg-event6.jpg"
+                        alt="PUBG MOBILE Event 06"
+                    >
+
+                </div>
+
+                <div class="event-info">
+
+                    <span>
+                        0.16.0
+                    </span>
+
+                    <h3>
+                        WINTER FESTIVAL
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- EVENT 07 -->
+
+            <article class="event-card">
+
+                <div class="event-image">
+
+                    <img
+                        src="pubg-event7.jpg"
+                        alt="PUBG MOBILE Event 07"
+                    >
+
+                </div>
+
+                <div class="event-info">
+
+                    <span>
+                        0.17.0
+                    </span>
+
+                    <h3>
+                        AMUSEMENT PARK MODE
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- EVENT 08 -->
+
+            <article class="event-card">
+
+                <div class="event-image">
+
+                    <img
+                        src="pubg-event8.jpg"
+                        alt="PUBG MOBILE Event 08"
+                    >
+
+                </div>
+
+                <div class="event-info">
+
+                    <span>
+                        1.1
+                    </span>
+
+                    <h3>
+                        METRO ROYALE MODE
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- EVENT 09 -->
+
+            <article class="event-card">
+
+                <div class="event-image">
+
+                    <img
+                        src="pubg-event9.jpg"
+                        alt="PUBG MOBILE Event 09"
+                    >
+
+                </div>
+
+                <div class="event-info">
+
+                    <span>
+                        1.4
+                    </span>
+
+                    <h3>
+                        TITAN STRIKES
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- EVENT 10 -->
+
+            <article class="event-card">
+
+                <div class="event-image">
+
+                    <img
+                        src="pubg-event10.jpg"
+                        alt="PUBG MOBILE Event 10"
+                    >
+
+                </div>
+
+                <div class="event-info">
+
+                    <span>
+                        1.5
+                    </span>
+
+                    <h3>
+                        MISSION IGNITION
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- EVENT 11 -->
+
+            <article class="event-card">
+
+                <div class="event-image">
+
+                    <img
+                        src="pubg-event11.jpg"
+                        alt="PUBG MOBILE Event 11"
+                    >
+
+                </div>
+
+                <div class="event-info">
+
+                    <span>
+                        1.7
+                    </span>
+
+                    <h3>
+                        MIRROR WORLD
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- EVENT 12 -->
+
+            <article class="event-card">
+
+                <div class="event-image">
+
+                    <img
+                        src="pubg-event12.jpg"
+                        alt="PUBG MOBILE Event 12"
+                    >
+
+                </div>
+
+                <div class="event-info">
+
+                    <span>
+                        1.8
+                    </span>
+
+                    <h3>
+                        SPIDER-MAN
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- EVENT 13 -->
+
+            <article class="event-card">
+
+                <div class="event-image">
+
+                    <img
+                        src="pubg-event13.jpg"
+                        alt="PUBG MOBILE Event 13"
+                    >
+
+                </div>
+
+                <div class="event-info">
+
+                    <span>
+                        2.1
+                    </span>
+
+                    <h3>
+                        ANCIENT SECRET: ARISE
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- EVENT 14 -->
+
+            <article class="event-card">
+
+                <div class="event-image">
+
+                    <img
+                        src="pubg-event14.jpg"
+                        alt="PUBG MOBILE Event 14"
+                    >
+
+                </div>
+
+                <div class="event-info">
+
+                    <span>
+                        2.6
+                    </span>
+
+                    <h3>
+                        DINOGROUND
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- EVENT 15 -->
+
+            <article class="event-card">
+
+                <div class="event-image">
+
+                    <img
+                        src="pubg-event15.jpg"
+                        alt="PUBG MOBILE Event 15"
+                    >
+
+                </div>
+
+                <div class="event-info">
+
+                    <span>
+                         2.7
+                    </span>
+
+                    <h3>
+                        DRAGON BALL SUPER MODE
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+        <article class="event-card">
+
+                <div class="event-image">
+
+                    <img
+                        src="pubg-event16.jpg"
+                        alt="PUBG MOBILE Event 16"
+                    >
+
+                </div>
+
+                <div class="event-info">
+
+                    <span>
+                        3.1
+                    </span>
+
+                    <h3>
+                        SKYHIGH SPECTACLE
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+<article class="event-card">
+
+                <div class="event-image">
+
+                    <img
+                        src="pubg-event17.jpg"
+                        alt="PUBG MOBILE Event 17"
+                    >
+
+                </div>
+
+                <div class="event-info">
+
+                    <span>
+                        3.3
+                    </span>
+
+                    <h3>
+                        OCEAN ODYSSEY
+                    </h3>
+
+                </div>
+
+            </article>
+
+<article class="event-card">
+
+                <div class="event-image">
+
+                    <img
+                        src="pubg-event18.jpg"
+                        alt="PUBG MOBILE Event 18"
+                    >
+
+                </div>
+
+                <div class="event-info">
+
+                    <span>
+                        3.5
+                    </span>
+
+                    <h3>
+                        ICEMIRE FRONTIER
+                    </h3>
+
+                </div>
+
+            </article>
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <h3>
+        PUBG MOBILE
+    </h3>
+
+    <p>
+        PLAYERUNKNOWN'S BATTLEGROUNDS
+    </p>
+
+    <p>
+        Personal fan-made web project.
+        Not affiliated with or endorsed by PUBG MOBILE.
+    </p>
+
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
